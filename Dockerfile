@@ -1,6 +1,9 @@
 # Use the latest stable version of Ruby
 FROM ruby:2.4.1
 
+# Set maintainer info (deprecated -- purely for display)
+MAINTAINER Nicholaus Brabant <nicholaus.brabant@gmail.com>
+
 # Set environment variables and working directory
 ENV APP_PATH /docker-rails
 WORKDIR $APP_PATH
