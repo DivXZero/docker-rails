@@ -25,6 +25,7 @@ Bring the containers up
 ```bash
 $ docker-compose up
 ```
+Visit the project at [http://localhost:3000](http://localhost:3000/)
 
 Stop the containers
 ```bash
@@ -51,7 +52,7 @@ $ docker-compose run web rake db:drop
 
 ## Issues
 
-If the containers fails to start, stating that a server is already running, press `ctrl-c` and remove the temporary pid file:
+If the web container fails to start, stating that a server is already running, press `ctrl-c` and remove the temporary pid file:
 ```bash
 $ rm tmp/pids/server.pid
 ```
