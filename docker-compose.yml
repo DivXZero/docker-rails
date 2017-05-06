@@ -6,6 +6,8 @@ services:
     image: postgres:9.6
     ports:
       - 5432:5432
+    env_file:
+      - .env
 
   web:
     build: .
@@ -14,5 +16,7 @@ services:
       - .:/docker-rails
     ports:
       - 3000:3000
+    env_file:
+      - .env
     links:
       - db
